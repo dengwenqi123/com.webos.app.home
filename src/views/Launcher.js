@@ -73,7 +73,7 @@ const LauncherBase = kind({
 			};
 			return (
 				<LauncherTile {...tileProps} first={index === 0}>
-					{title}
+					{title+'米'}
 				</LauncherTile>
 			);
 		}

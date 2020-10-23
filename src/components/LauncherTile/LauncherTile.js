@@ -124,6 +124,12 @@ const LauncherTileBase = kind({
 		delete rest.systemapp;
 		return (
 			<div {...rest}
+				onKeyUp={(e) =>{
+					var key = e.which;
+					if(key == 13) {
+						onClick();
+					}
+				}}
 				onTouchStart={onTouchStart}
 				onTouchEnd={onTouchEnd}
 				onTouchMove={onTouchMove}
